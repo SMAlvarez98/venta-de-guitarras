@@ -3,21 +3,38 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- LINK DE BOOSTRAP -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
     <link rel="stylesheet" href="../css/style.css">
     <title>Acerca de Nosotros</title>
 </head>
 <body>
     <header>
-        <nav class="barraNav">
-            <img id="logo" src="../icons/guitar_6656554.png" alt="">
-        </ul>
-        <ul class="botonesDeLaBarra"> <!--BOTONES DE LA BARRA-->
-            <!-- BARRA DE NAVEGACION -->
-            <li><a href="../index.html">Inicio</a></li>
-            <li><a href="productos.html">Productos</a></li>
-            <li><a href="#">Acerca de</a></li>
-            <li><a href="contacto.html">Contacto</a></li>
-        </ul>
+        <nav class="navbar navbar-expand-lg" style="background-color: #994B12;">
+            <div class="container-fluid">
+            <a class="navbar-brand" href="../index.html">
+                <img id="logo" src="../icons/guitar_6656554.png"
+            >Guitarras Alvarez</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav">
+                <li class="nav-item">
+                    <a class="nav-link active" aria-current="page" href="../index.html">INICIO</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="../pages/productos.html">PRODUCTOS</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">ACERCA DE</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="../pages/contacto.html">CONTACTO</a>
+                </li>
+                </ul>
+            </div>
+            </div>
         </nav>
     </header>
     <main>
@@ -26,7 +43,22 @@
             <div class="text__acercaDe">
                 <h2>¿Querés saber quienes somos?</h2>
                 <h1>Acerca de nosotros</h1>
-                <h1>(Work in progress) ayuda, soy un h1 que quiere estar centrado y mi developer no sabe como hacerlo :c</h1>
+            </div>
+        </section>
+        <section id="box-preguntas-frecuentes">
+            <div>
+                <p>PREGUNTAS FRECUENTES</p>
+            </div>
+        </section>
+        <section id="preguntas-frecuentes">
+            <div class="pregunta-link">
+                <a href="#">¿QUIENES SOMOS?</a>
+            </div>
+            <div class="pregunta-link">
+                <a href="#">¿CÓMO TRABAJAMOS?</a>
+            </div>
+            <div class="pregunta-link">
+                <a href="#">¿POR QUÉ ELEGIRNOS?</a>
             </div>
         </section>
     </main>
@@ -49,5 +81,7 @@
             <img src="../icons/MdiWhatsapp.png" alt="">
         </article>
     </footer>
+        <!-- LINK JS -->
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
 </body>
 </html>

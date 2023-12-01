@@ -1,251 +1,394 @@
-*{
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-    font-family: Arial, Helvetica, sans-serif;
+@charset "UTF-8";
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Arial, Helvetica, sans-serif;
 }
+
+html, body {
+  overflow-x: hidden;
+}
+
 /*header{
     position: fixed;  para que la barra nav te siga */
-    /* z-index: 100;     para que suba en las "capas" */
-    /* width: 100%; 
+/* z-index: 100;     para que suba en las "capas" */
+/* width: 100%; 
 }*/
-
 /* ESTILO HEADER */
+header nav {
+  display: flex;
+  background-color: #994B12;
+  justify-content: space-around;
+  padding: 10px;
+}
 
-header nav{
-    display: flex;
-    background-color: #994B12;
-    justify-content: space-around;
-    padding: 10px;
+#logo {
+  width: 5%;
+  height: 5%;
 }
-#logo{
-    width: 5%;
-    height: 5%;
+
+header nav ul {
+  display: flex;
+  align-items: center;
 }
-header nav ul{
-    display: flex;
-    align-items: center;
+
+header nav ul li {
+  list-style: none;
+  margin-left: 30px;
+  font-size: 30px;
 }
-header nav ul li{
-    list-style: none;
-    margin-left: 30px;
-    font-size: 30px;
-}
+
 header nav ul li a {
-    text-decoration: none;
-    color: white;
-}
-/* ESTILO MAIN: INDEX */
-.banner{
-    position: relative;
-}
-/* IMAGEN DEL BANNER DEL INDEX */
-.banner img{
-    width: 100%;
-    height: 100%;
-}
-/* RECURSO QUE USÉ PARA PONER EL TEXTO DENTRO DE LA IMAGEN DEL BANER */
-.banner__text{
-    position: absolute;
-    top: 20%;
-    padding: 100px;
-    text-align: center;
-}
-.banner__text h2{
-    color: red;
-    font-size: 50px;
-    font-weight: bold;
-}
-.banner__text h1{
-    color: white;
-}
-#imagenSubbaner{
-    width: 100%;
-    height: 100%;
-}
-/* SABEMOS DE GUITARRAS */
-.cajaSabemosDeGuitarras{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    width: 100%;
-    height: 100px;
-    font-size: 60px;
-    font-family: 'Courier New', Courier, monospace;
-    background-color: #AE8568;
-}
-.cajaSabemosDeGuitarras h1{
-    color: #461D00;
-}
-.nuestroservicio {
-    background-color: #863800;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    text-align: center;
-    font-size: 50px;
-    padding: 30px;
-    padding-bottom: 0px;
-    flex-direction: column;
-}
-.nuestroservicio p {
-    color: #FBDF96;
-}
-.banner__button {
-    width: 120px;
-    height: 90px;
-    border-radius: 10px;
-    margin: 50px;
-    background-color: #C75300;
-    font-size: 30px;
-    display: flex;
-    align-items: center;
+  text-decoration: none;
+  color: white;
 }
 
-.banner__button a{
-    text-decoration: none;
+.navbar {
+  background-color: #994B12;
+}
+
+/* ESTILO MAIN: INDEX */
+.banner {
+  position: relative;
+}
+
+/* IMAGEN DEL BANNER DEL INDEX */
+.banner img {
+  width: 100%;
+  height: 100%;
+}
+
+/* RECURSO QUE USÉ PARA PONER EL TEXTO DENTRO DE LA IMAGEN DEL BANER */
+.banner__text {
+  position: absolute;
+  top: 20%;
+  padding: 100px;
+  text-align: center;
+}
+
+.banner__text h2 {
+  color: red;
+  font-size: 50px;
+  font-weight: bold;
+}
+
+.banner__text h1 {
+  color: white;
+}
+
+#imagenSubbaner {
+  width: 100%;
+  height: 100%;
+}
+
+/* SABEMOS DE GUITARRAS */
+.cajaSabemosDeGuitarras {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 100px;
+  font-size: 60px;
+  font-family: "Courier New", Courier, monospace;
+  background-color: #AE8568;
+}
+
+.cajaSabemosDeGuitarras h1 {
+  color: #461D00;
+}
+
+.nuestroservicio {
+  background-color: #863800;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  font-size: 50px;
+  padding: 30px;
+  padding-bottom: 0px;
+  flex-direction: column;
+}
+
+.nuestroservicio p {
+  color: #FBDF96;
+}
+
+.banner__button {
+  width: 120px;
+  height: 90px;
+  border-radius: 10px;
+  margin: 50px;
+  background-color: #C75300;
+  font-size: 30px;
+  display: flex;
+  align-items: center;
+}
+
+.banner__button a {
+  text-decoration: none;
 }
 
 /* ESTILO FOOTER */
 #footer {
-    margin-top: auto;
-    width: 100%;
-    height: 170px;
-    background-color: #612900;
-    display: flex;
-    justify-content: space-around;
-    align-items: center;
-    gap: 80px;
-}
-.logo__footer img {
-    width: 140px;
-    height: 140px;
-}
-.footer__links ul {
-    display: flex;
-    flex-direction: column;
-    text-align: center;
-    list-style: none;
+  margin-top: auto;
+  width: 100%;
+  height: 170px;
+  background-color: #612900;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
 }
 
-.footer__links ul li a{
-    color: white;
-    font-size: 20px;
-    margin-top: 7px;
-    text-decoration: none;
+.logo__footer img {
+  width: 140px;
+  height: 140px;
 }
+
+.footer__links ul {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  list-style: none;
+}
+
+.footer__links ul li a {
+  color: white;
+  font-size: 20px;
+  margin-top: 7px;
+  text-decoration: none;
+}
+
 .footer__redes img {
-    border: 2px solid black;
-    border-radius: 100%;
-    width: 50px;
-    padding: 5px;
-    margin: 5px;
+  border: 2px solid black;
+  border-radius: 100%;
+  width: 50px;
+  padding: 5px;
+  margin: 5px;
 }
+
 /* ESTILO PAGE PRODUCTOS */
 .box-imagen-baner-y-texto {
-    width: 100%;
-    height: 100vh;
-    background-image: url(../images/productos/banner\ productos.jpg);
-    background-size: cover;
-    display: flex;
-    flex-direction: column;
-    text-align: center;
-    justify-content: center;
-    
-    font-size: xx-large;
-    color: white;
+  width: 100%;
+  height: 100vh;
+  background-image: url(../images/productos/banner\ productos.jpg);
+  background-size: cover;
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  justify-content: center;
+  color: white;
+  font-size: xx-large;
 }
+
 #producto1 {
-    display: flex;
-    justify-content: center;
-    align-items: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
 }
+
+#producto1 img {
+  width: 650px;
+  height: 650px;
+}
+
+.box-imagen-baner-y-texto h2 {
+  font-size: 100px;
+}
+
 /* ESTILO PAGE ACERCA DE */
 #banner__acercaDe {
-    position: relative;
+  position: relative;
 }
+
 #banner__acercaDe img {
-    width: 100%;
-    height: 100%;
+  width: 100%;
+  height: 100%;
 }
-/* problemas :C  ¿Cómo carajo centro mejor esto?*/
+
 .text__acercaDe {
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    color: white;
-    font-size: xx-large;
+  position: absolute;
+  top: 10%;
+  left: 0%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  color: white;
+  font-size: xx-large;
 }
+
+.text__acercaDe h2 {
+  color: orange;
+  font-size: 150px;
+}
+
+.text__acercaDe h1 {
+  font-size: 100px;
+}
+
+#box-preguntas-frecuentes {
+  background-color: #AE8568;
+  display: flex;
+  justify-content: center;
+}
+
+#box-preguntas-frecuentes div p {
+  font-size: 50px;
+}
+
+#preguntas-frecuentes {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.pregunta-link {
+  background-color: #C75300;
+  border-radius: 10px;
+  display: flex;
+  margin: 10px;
+  font-size: 30px;
+}
+
+.pregunta-link a {
+  text-decoration: none;
+  color: white;
+}
+
 /* ESTILO PAGE CONTACTO */
 #banner__dondeEncontrarnos img {
-    width: 100%;
-    height: 100%;
-    position: relative;
+  width: 100%;
+  height: 100%;
+  position: relative;
 }
+
 #banner__dondeEncontrarnos {
-    display: flex;
-    justify-content: center;
-    align-items: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
+
 #banner__dondeEncontrarnos h2 {
-    position: absolute;
-    font-size: 150px;
-    color: white;
+  position: absolute;
+  font-size: 150px;
+  color: white;
 }
+
 .subtituloborrable {
-    position: absolute;
-    top: 120%;
-    left: 40%;
-    color: black;
-    font-size: xx-large;
+  position: absolute;
+  top: 120%;
+  left: 40%;
+  color: black;
+  font-size: xx-large;
 }
+
 /* ESTILO PAGE GUITARRA1 */
-.imagenes__guitarra1 .subimagen1{
-    width: 300px;
-    height: 300px;
-    display: flex;
+.imagenes__guitarra1 .subimagen1 {
+  width: 300px;
+  height: 300px;
+  display: flex;
 }
-.imagenes__guitarra1 .subimagen2{
-    width: 300px;
-    height: 300px;
-    display: flex; /*por algun motivo que no estoy entendiendo se aplasta la imagen.*/
+
+.imagenes__guitarra1 .subimagen2 {
+  width: 300px;
+  height: 300px;
+  display: flex; /*por algun motivo que no estoy entendiendo se aplasta la imagen.*/
 }
+
 /* BARRA DE NAVEGACION RESPONSIVE */
 @media (max-width: 815px) {
-    .botonesDeLaBarra li{
-        font-size: 20px;
-    }
-    #logo {
-        width: 5vh;
-    }
+  .botonesDeLaBarra li {
+    font-size: 20px;
+  }
+  #logo {
+    width: 5vh;
+  }
 }
 /* RESPONSIVE INDEX */
 @media (max-width: 690px) {
-    .banner__text {
-        display: flex;
-        flex-direction: column;
-        padding: 0px;
-        margin: 0px;
-    }
+  .banner__text {
+    display: flex;
+    flex-direction: column;
+    padding: 0px;
+    margin: 0px;
+  }
+}
+@media (max-width: 400px) {
+  .banner__text h1 {
+    font-size: 20px;
+  }
+  .banner__text h2 {
+    font-size: 20px;
+  }
+  .nuestroservicio {
+    font-size: 20px;
+  }
+  .cajaSabemosDeGuitarras h1 {
+    font-size: 20px;
+  }
 }
 /* RESPONSIVE FOOTER */
-
 @media (max-width: 566px) {
-    #footer {
-        width: 100%;
-    }
-    .footer__redes {
-        display: flex;
-        flex-wrap: wrap;
-    }
+  #footer {
+    width: 100%;
+  }
+  .footer__redes {
+    border-radius: none;
+    display: flex;
+    flex-wrap: wrap;
+  }
 }
 @media (max-width: 918px) {
-    .cajaSabemosDeGuitarras {
-        font-size: 40px;
-    }
+  .cajaSabemosDeGuitarras {
+    font-size: 40px;
+  }
 }
 @media (max-width: 618px) {
-    .cajaSabemosDeGuitarras {
-        font-size: 30px;
-    }
+  .cajaSabemosDeGuitarras {
+    font-size: 30px;
+  }
 }
+@media (max-width: 400px) {
+  .footer__redes {
+    margin-left: 10px;
+    display: flex;
+    flex-flow: wrap;
+  }
+  .footer__redes img {
+    width: 40px;
+    height: 40px;
+    border: none;
+  }
+  .logo__footer img {
+    width: 50px;
+    height: 50px;
+    margin-left: 10px;
+  }
+  .footer__links ul li a {
+    font-size: 16px;
+  }
+}
+/*RESPONSIVE ACERCA DE*/
+@media (max-width: 1080px) {
+  .text__acercaDe h2 {
+    font-size: 70px;
+  }
+  .text__acercaDe h1 {
+    font-size: 60px;
+  }
+}
+@media (max-width: 537px) {
+  .text__acercaDe h2 {
+    font-size: 50px;
+  }
+  .text__acercaDe h1 {
+    font-size: 40px;
+  }
+  #box-preguntas-frecuentes div p {
+    font-size: 20px;
+  }
+}
+
+/*# sourceMappingURL=style.css.map */
