@@ -1,0 +1,76 @@
+/* ESTILO FOOTER */
+#footer {
+    margin-top: auto;
+    width: 100%;
+    height: 170px;
+    background-color: #612900;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+.logo__footer img {
+    width: 140px;
+    height: 140px;
+}
+.footer__links ul {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    list-style: none;
+}
+
+.footer__links ul li a{
+    color: white;
+    font-size: 20px;
+    margin-top: 7px;
+    text-decoration: none;
+}
+.footer__redes img {
+    border: 2px solid black;
+    border-radius: 100%;
+    width: 50px;
+    padding: 5px;
+    margin: 5px;
+}
+/* RESPONSIVE FOOTER */
+
+@media (max-width: 566px) {
+    #footer {
+        width: 100%;
+    }
+    .footer__redes {
+        border-radius: none;
+        display: flex;
+        flex-wrap: wrap;
+    }
+}
+@media (max-width: 918px) {
+    .cajaSabemosDeGuitarras {
+        font-size: 40px;
+    }
+}
+@media (max-width: 618px) {
+    .cajaSabemosDeGuitarras {
+        font-size: 30px;
+    }
+}
+@media (max-width: 400px) {
+    .footer__redes {
+        margin-left: 10px;
+        display: flex;
+        flex-flow: wrap;
+    }
+    .footer__redes img{
+        width: 40px;
+        height: 40px;
+        border: none;
+    }
+    .logo__footer img{
+        width: 50px;
+        height: 50px;
+        margin-left: 10px;
+    }
+    .footer__links ul li a{
+        font-size: 16px;
+    }
+}

@@ -1,0 +1,94 @@
+/* ESTILO MAIN: INDEX */
+.banner{
+    position: relative;
+}
+/* IMAGEN DEL BANNER DEL INDEX */
+.banner img{
+    width: 100%;
+    height: 100%;
+}
+/* RECURSO QUE USÉ PARA PONER EL TEXTO DENTRO DE LA IMAGEN DEL BANER */
+.banner__text{
+    position: absolute;
+    top: 20%;
+    padding: 100px;
+    text-align: center;
+}
+.banner__text h2{
+    color: red;
+    font-size: 50px;
+    font-weight: bold;
+}
+.banner__text h1{
+    color: white;
+}
+#imagenSubbaner{
+    width: 100%;
+    height: 100%;
+}
+/* SABEMOS DE GUITARRAS */
+.cajaSabemosDeGuitarras{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 100px;
+    font-size: 60px;
+    font-family: 'Courier New', Courier, monospace;
+    background-color: #AE8568;
+}
+.cajaSabemosDeGuitarras h1{
+    color: #461D00;
+}
+.nuestroservicio {
+    background-color: #863800;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    font-size: 50px;
+    padding: 30px;
+    padding-bottom: 0px;
+    flex-direction: column;
+}
+.nuestroservicio p {
+    color: #FBDF96;
+}
+.banner__button {
+    width: 120px;
+    height: 90px;
+    border-radius: 10px;
+    margin: 50px;
+    background-color: #C75300;
+    font-size: 30px;
+    display: flex;
+    align-items: center;
+}
+
+.banner__button a{
+    text-decoration: none;
+}
+/* RESPONSIVE INDEX */
+@media (max-width: 690px) {
+    .banner__text {
+        display: flex;
+        flex-direction: column;
+        padding: 0px;
+        margin: 0px;
+    }
+}
+@media (max-width: 400px) {
+
+    .banner__text h1 {
+        font-size: 20px;
+    }
+    .banner__text h2 {
+        font-size: 20px;
+    }
+    .nuestroservicio {
+        font-size: 20px;
+    }
+    .cajaSabemosDeGuitarras h1 {
+        font-size: 20px;
+    }
+}

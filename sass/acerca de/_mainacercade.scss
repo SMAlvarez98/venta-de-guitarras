@@ -1,0 +1,70 @@
+/* ESTILO PAGE ACERCA DE */
+#banner__acercaDe {
+    position: relative;
+}
+#banner__acercaDe img {
+    width: 100%;
+    height: 100%;
+}
+.text__acercaDe {
+    position: absolute;
+    top: 10%;
+    left: 0%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    color: white;
+    font-size: xx-large;
+}
+.text__acercaDe h2 {
+    color: orange;
+    font-size: 150px;
+}
+.text__acercaDe h1 {
+    font-size: 100px;
+}
+#box-preguntas-frecuentes {
+    background-color: #AE8568;
+    display: flex;
+    justify-content: center;
+}
+#box-preguntas-frecuentes div p {
+    font-size: 50px;
+}
+#preguntas-frecuentes {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.pregunta-link {
+    background-color: #C75300;
+    border-radius: 10px;
+    display: flex;
+    margin: 10px;
+    font-size: 30px;
+}
+.pregunta-link a {
+    text-decoration: none;
+    color: white;
+}
+/*RESPONSIVE ACERCA DE*/
+@media (max-width: 1080px) {
+    .text__acercaDe h2 {
+        font-size: 70px;
+    }
+    .text__acercaDe h1 {
+        font-size: 60px;
+    }
+}
+@media (max-width: 537px) {
+    .text__acercaDe h2 {
+        font-size: 50px;
+    }
+    .text__acercaDe h1 {
+        font-size: 40px;
+    }
+    #box-preguntas-frecuentes div p {
+        font-size: 20px;
+    }
+}
