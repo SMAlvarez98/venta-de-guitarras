@@ -334,14 +334,14 @@ html, body {
   font-size: xx-large;
 }
 
-#producto1 {
+#guitarra-numero1 {
   display: flex;
   justify-content: center;
   align-items: center;
   text-align: center;
 }
 
-#producto1 img {
+#guitarra-numero1 img {
   width: 650px;
   height: 650px;
 }
@@ -358,7 +358,7 @@ html, body {
   #banner__productos h2 {
     font-size: 50px;
   }
-  #producto1 img {
+  #guitarra-numero1 img {
     height: 500px;
     width: 500px;
   }
@@ -370,11 +370,11 @@ html, body {
   #banner__productos h2 {
     font-size: 50px;
   }
-  #producto1 {
+  #guitarra-numero1 {
     display: flex;
     flex-direction: column;
   }
-  #producto1 img {
+  #guitarra-numero1 img {
     height: 400px;
     width: 400px;
   }
@@ -386,11 +386,11 @@ html, body {
   #banner__productos h2 {
     font-size: 50px;
   }
-  #producto1 {
+  #guitarra-numero1 {
     display: flex;
     flex-direction: column;
   }
-  #producto1 img {
+  #guitarra-numero1 img {
     height: 400px;
     width: 400px;
   }
@@ -470,17 +470,268 @@ html, body {
   justify-content: space-around;
 }
 
+@media (max-width: 979px) {
+  #banner__dondeEncontrarnos h2 {
+    font-size: 100px;
+  }
+  #box-contacto p {
+    font-size: 40px;
+  }
+  #metodos-de-contacto .wpp img {
+    width: 70px;
+    height: 70px;
+  }
+  #metodos-de-contacto .wpp p {
+    font-size: 40px;
+  }
+  #metodos-de-contacto .mail img {
+    width: 70px;
+    height: 70px;
+  }
+  #metodos-de-contacto .newsletter label {
+    font-size: 35px;
+  }
+  #metodos-de-contacto .newsletter form {
+    font-size: 35px;
+  }
+  #metodos-de-contacto .newsletter .boton-enviar {
+    font-size: 30px;
+    width: 150px;
+    height: 50px;
+  }
+}
+@media (max-width: 767px) {
+  #banner__dondeEncontrarnos h2 {
+    font-size: 70px;
+  }
+  #box-contacto p {
+    font-size: 30px;
+  }
+  #metodos-de-contacto .wpp img {
+    width: 50px;
+    height: 50px;
+  }
+  #metodos-de-contacto .wpp p {
+    font-size: 35px;
+  }
+  #metodos-de-contacto .mail img {
+    width: 50px;
+    height: 50px;
+  }
+  #metodos-de-contacto .newsletter {
+    padding-bottom: 20px;
+  }
+  #metodos-de-contacto .newsletter label {
+    font-size: 30px;
+  }
+  #metodos-de-contacto .newsletter form {
+    font-size: 30px;
+  }
+  #metodos-de-contacto .newsletter .boton-enviar {
+    font-size: 25px;
+    width: 100px;
+    height: 50px;
+  }
+}
+@media (max-width: 480px) {
+  #banner__dondeEncontrarnos h2 {
+    font-size: 50px;
+  }
+  #box-contacto p {
+    font-size: 30px;
+  }
+  #metodos-de-contacto {
+    padding-left: 10px;
+  }
+  #metodos-de-contacto .wpp img {
+    width: 40px;
+    height: 40px;
+  }
+  #metodos-de-contacto .wpp p {
+    font-size: 30px;
+  }
+  #metodos-de-contacto .mail img {
+    width: 40px;
+    height: 40px;
+  }
+  #metodos-de-contacto .mail p {
+    font-size: 30px;
+  }
+  #metodos-de-contacto .newsletter {
+    padding-bottom: 20px;
+  }
+  #metodos-de-contacto .newsletter label {
+    font-size: 22px;
+  }
+  #metodos-de-contacto .newsletter form {
+    font-size: 20px;
+  }
+  #metodos-de-contacto .newsletter .boton-enviar {
+    font-size: 20px;
+    width: 70px;
+    height: 40px;
+  }
+}
 /* ESTILO PAGE GUITARRA1 */
-.imagenes__guitarra1 .subimagen1 {
-  width: 300px;
-  height: 300px;
+#producto1 {
+  padding-left: 100px;
+  padding-right: 100px;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  text-align: center;
+}
+#producto1 .imagen-text-producto1 {
+  display: flex;
+  align-items: center;
+}
+#producto1 #imagenes-guitarra1 {
   display: flex;
 }
+#producto1 .subimagen1 {
+  width: 450px;
+  height: 350px;
+  padding-right: 50px;
+}
+#producto1 .subimagen2 {
+  width: 450px;
+  height: 350px;
+  padding-left: 50px;
+}
+#producto1 #beneficios-de-compra {
+  padding-top: 20px;
+  display: flex;
+  flex-direction: column;
+}
+#producto1 #beneficios-de-compra .garantia {
+  display: flex;
+  align-items: center;
+}
+#producto1 #beneficios-de-compra .envio {
+  display: flex;
+  align-items: center;
+}
+#producto1 #beneficios-de-compra .cuotas {
+  display: flex;
+  align-items: center;
+}
+#producto1 #beneficios-de-compra p {
+  font-size: 40px;
+}
+#producto1 #beneficios-de-compra .precio-final p {
+  font-size: 60px;
+}
+#producto1 #beneficios-de-compra img {
+  width: 100px;
+  height: 100px;
+}
+#producto1 #beneficios-de-compra .boton-compra {
+  padding-bottom: 10px;
+  display: flex;
+  align-items: center;
+}
 
-.imagenes__guitarra1 .subimagen2 {
-  width: 300px;
-  height: 300px;
-  display: flex; /*por algun motivo que no estoy entendiendo se aplasta la imagen.*/
+@media (max-width: 979px) {
+  #producto1 {
+    padding-left: 40px;
+    padding-right: 40px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+  }
+  #producto1 h1 {
+    font-size: 40px;
+  }
+  #producto1 .imagen-text-producto1 img {
+    width: 450px;
+    height: 450px;
+  }
+  #producto1 #imagenes-guitarra1 .subimagen1 {
+    width: 200px;
+    height: 150px;
+  }
+  #producto1 #imagenes-guitarra1 .subimagen2 {
+    width: 250px;
+    height: 150px;
+  }
+  #producto1 #beneficios-de-compra p {
+    font-size: 30px;
+  }
+  #producto1 #beneficios-de-compra img {
+    width: 50px;
+    height: 50px;
+  }
+  #producto1 #beneficios-de-compra .precio-final p {
+    font-size: 50px;
+  }
+}
+@media (max-width: 767px) {
+  #producto1 {
+    padding-left: 40px;
+    padding-right: 40px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+  }
+  #producto1 h1 {
+    font-size: 30px;
+  }
+  #producto1 .imagen-text-producto1 img {
+    width: 315px;
+    height: 315px;
+  }
+  #producto1 #imagenes-guitarra1 .subimagen1 {
+    width: 175px;
+    height: 125px;
+  }
+  #producto1 #imagenes-guitarra1 .subimagen2 {
+    width: 225px;
+    height: 125px;
+  }
+  #producto1 #beneficios-de-compra p {
+    font-size: 25px;
+  }
+  #producto1 #beneficios-de-compra img {
+    width: 40px;
+    height: 40px;
+  }
+  #producto1 #beneficios-de-compra .precio-final p {
+    font-size: 40px;
+  }
+}
+@media (max-width: 480px) {
+  #producto1 {
+    padding-left: 40px;
+    padding-right: 40px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+  }
+  #producto1 h1 {
+    font-size: 15px;
+  }
+  #producto1 .imagen-text-producto1 img {
+    width: 215px;
+    height: 215px;
+  }
+  #producto1 #imagenes-guitarra1 .subimagen1 {
+    width: 150px;
+    height: 100px;
+  }
+  #producto1 #imagenes-guitarra1 .subimagen2 {
+    width: 200px;
+    height: 100px;
+  }
+  #producto1 #beneficios-de-compra p {
+    font-size: 15px;
+  }
+  #producto1 #beneficios-de-compra img {
+    width: 40px;
+    height: 40px;
+  }
+  #producto1 #beneficios-de-compra .precio-final p {
+    font-size: 30px;
+  }
 }
 
 /*# sourceMappingURL=style.css.map */

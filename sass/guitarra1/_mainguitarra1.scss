@@ -1,11 +1,186 @@
 /* ESTILO PAGE GUITARRA1 */
-.imagenes__guitarra1 .subimagen1{
-    width: 300px;
-    height: 300px;
+#producto1 {
+    padding-left: 100px;
+    padding-right: 100px;
     display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    text-align: center;
+    .imagen-text-producto1 {
+        display: flex;
+        align-items: center;
+    }
+    #imagenes-guitarra1 {
+        display: flex;
+    }
+    .subimagen1 {
+        width: 450px;
+        height: 350px;
+        padding-right: 50px;
+    }
+    .subimagen2 {
+        width: 450px;
+        height: 350px;
+        padding-left: 50px;
+    }
+    #beneficios-de-compra {
+        padding-top: 20px;
+        display: flex;
+        flex-direction: column;
+        .garantia {
+            display: flex;
+            align-items: center;
+        }
+        .envio {
+            display: flex;
+            align-items: center;
+        }
+        .cuotas {
+            display: flex;
+            align-items: center;
+        }
+        p {
+            font-size: 40px;
+        }
+        .precio-final {
+            p {
+                font-size: 60px;
+            }
+        }
+        img {
+            width: 100px;
+            height: 100px;
+        }
+        .boton-compra {
+            padding-bottom: 10px;
+            display: flex;
+            align-items: center;
+        }
+    }
 }
-.imagenes__guitarra1 .subimagen2{
-    width: 300px;
-    height: 300px;
-    display: flex; /*por algun motivo que no estoy entendiendo se aplasta la imagen.*/
+@media (max-width: 979px) {
+    #producto1 {
+        padding-left: 40px;
+        padding-right: 40px;
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        h1 {
+            font-size: 40px;
+        }
+        .imagen-text-producto1 {
+            img {
+                width: 450px;
+                height: 450px;
+            }
+        }
+        #imagenes-guitarra1 {
+            .subimagen1 {
+                width: 200px;
+                height: 150px;
+            }
+            .subimagen2 {
+                width: 250px;
+                height: 150px;
+            }
+        }
+        #beneficios-de-compra {
+            p {
+                font-size: 30px;
+            }
+            img {
+                width: 50px;
+                height: 50px;
+            }
+            .precio-final {
+                p {
+                    font-size: 50px;
+                }
+            }
+        }
+    }
+}
+@media (max-width: 767px) {
+    #producto1 {
+        padding-left: 40px;
+        padding-right: 40px;
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        h1 {
+            font-size: 30px;
+        }
+        .imagen-text-producto1 {
+            img {
+                width: 315px;
+                height: 315px;
+            }
+        }
+        #imagenes-guitarra1 {
+            .subimagen1 {
+                width: 175px;
+                height: 125px;
+            }
+            .subimagen2 {
+                width: 225px;
+                height: 125px;
+            }
+        }
+        #beneficios-de-compra {
+            p {
+                font-size: 25px;
+            }
+            img {
+                width: 40px;
+                height: 40px;
+            }
+            .precio-final {
+                p {
+                    font-size: 40px;
+                }
+            }
+        }
+    }
+}
+@media (max-width: 480px) {
+    #producto1 {
+        padding-left: 40px;
+        padding-right: 40px;
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        h1 {
+            font-size: 15px;
+        }
+        .imagen-text-producto1 {
+            img {
+                width: 215px;
+                height: 215px;
+            }
+        }
+        #imagenes-guitarra1 {
+            .subimagen1 {
+                width: 150px;
+                height: 100px;
+            }
+            .subimagen2 {
+                width: 200px;
+                height: 100px;
+            }
+        }
+        #beneficios-de-compra {
+            p {
+                font-size: 15px;
+            }
+            img {
+                width: 40px;
+                height: 40px;
+            }
+            .precio-final {
+                p {
+                    font-size: 30px;
+                }
+            }
+        }
+    }
 }

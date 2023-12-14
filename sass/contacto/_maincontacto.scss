@@ -71,3 +71,123 @@
         
     }
 }
+@media (max-width: 979px) {
+    #banner__dondeEncontrarnos {
+        h2 {
+            font-size: 100px;
+        }
+    }
+    #box-contacto {
+        p {
+            font-size: 40px;
+        }
+    }
+    #metodos-de-contacto {
+        .wpp img{
+            width: 70px;
+            height: 70px;
+        }
+        .wpp p {
+            font-size: 40px;
+        }
+        .mail img {
+            width: 70px;
+            height: 70px;
+        }
+        .newsletter {
+            label {
+                font-size: 35px;
+            }
+            form {
+                font-size: 35px;
+            }
+            .boton-enviar {
+                font-size: 30px;
+                width: 150px;
+                height: 50px;
+            }
+        }
+    }
+}
+@media (max-width: 767px) {
+    #banner__dondeEncontrarnos {
+        h2 {
+            font-size: 70px;
+        }
+    }
+    #box-contacto {
+        p {
+            font-size: 30px;
+        }
+    }
+    #metodos-de-contacto {
+        .wpp img{
+            width: 50px;
+            height: 50px;
+        }
+        .wpp p {
+            font-size: 35px;
+        }
+        .mail img {
+            width: 50px;
+            height: 50px;
+        }
+        .newsletter {
+            label {
+                font-size: 30px;
+            }
+            form {
+                font-size: 30px;
+            }
+            .boton-enviar {
+                font-size: 25px;
+                width: 100px;
+                height: 50px;
+            }
+            padding-bottom: 20px;
+        }
+    }
+}
+@media (max-width: 480px) {
+    #banner__dondeEncontrarnos {
+        h2 {
+            font-size: 50px;
+        }
+    }
+    #box-contacto {
+        p {
+            font-size: 30px;
+        }
+    }
+    #metodos-de-contacto {
+        padding-left: 10px;
+        .wpp img{
+            width: 40px;
+            height: 40px;
+        }
+        .wpp p {
+            font-size: 30px;
+        }
+        .mail img {
+            width: 40px;
+            height: 40px;
+        }
+        .mail p {
+            font-size: 30px;
+        }
+        .newsletter {
+            label {
+                font-size: 22px;
+            }
+            form {
+                font-size: 20px;
+            }
+            .boton-enviar {
+                font-size: 20px;
+                width: 70px;
+                height: 40px;
+            }
+            padding-bottom: 20px;
+        }
+    }
+}
